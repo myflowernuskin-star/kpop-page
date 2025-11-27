@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-POP 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "kpop-blue": "#2563eb",
+            "kpop-sky": "#38bdf8",
+            "kpop-indigo": "#4c1d95"
+          },
+          fontFamily: {
+            sans: ['"Pretendard"', '"Noto Sans KR"', "ui-sans-serif", "system-ui"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @keyframes fadeInSoft {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInSoft 0.9s ease forwards;
+    }
+    .fade-delay-1 { animation-delay: 0.1s; }
+    .fade-delay-2 { animation-delay: 0.2s; }
+    .fade-delay-3 { animation-delay: 0.3s; }
+    .fade-delay-4 { animation-delay: 0.4s; }
+    .fade-delay-5 { animation-delay: 0.5s; }
+    .fade-delay-6 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-sky-900 text-slate-100 font-sans">
+  <div class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 opacity-40 blur-3xl pointer-events-none">
+      <div class="w-72 h-72 bg-kpop-sky/80 rounded-full absolute -top-10 -left-5 mix-blend-screen"></div>
+      <div class="w-80 h-80 bg-indigo-500/80 rounded-full absolute top-1/4 right-0 mix-blend-screen"></div>
+      <div class="w-96 h-96 bg-blue-500/80 rounded-full absolute bottom-0 left-1/3 mix-blend-screen"></div>
+      <div class="w-60 h-60 bg-white/40 rounded-full absolute bottom-20 right-1/4 mix-blend-screen"></div>
+    </div>
+
+    <nav class="relative w-full px-6 pt-6">
+      <div class="fade-in fade-delay-1 max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 bg-white/10 backdrop-blur-2xl rounded-full py-4 px-6 border border-white/20 shadow-[0_10px_35px_rgba(15,23,42,0.4)]">
+        <a href="index.html" class="text-white font-semibold tracking-wide text-lg flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-kpop-sky animate-pulse"></span>
+          Global Pop Pulse
+        </a>
+        <div class="flex flex-wrap items-center gap-3 text-sm font-medium text-white/80">
+          <a href="index.html" class="px-4 py-2 rounded-full hover:bg-white/15 border border-transparent hover:border-white/30 transition">K-POP</a>
+          <a href="us-pop.html" class="px-4 py-2 rounded-full hover:bg-white/15 border border-transparent hover:border-white/30 transition">미국 팝</a>
+          <a href="uk-pop.html" class="px-4 py-2 rounded-full hover:bg-white/15 border border-transparent hover:border-white/30 transition">영국 팝</a>
+          <a href="jpop.html" class="px-4 py-2 rounded-full hover:bg-white/15 border border-transparent hover:border-white/30 transition">일본 팝</a>
+          <a href="latin-pop.html" class="px-4 py-2 rounded-full hover:bg-white/15 border border-transparent hover:border-white/30 transition">라틴 팝</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="relative w-full pt-10 pb-12 px-6">
+      <div class="fade-in fade-delay-1 max-w-6xl mx-auto grid gap-10 lg:grid-cols-[1.3fr_1fr] items-center bg-white/10 backdrop-blur-2xl rounded-[2.2rem] px-10 py-12 shadow-[0_30px_70px_rgba(15,23,42,0.45)] border border-white/25">
+        <div>
+          <p class="inline-flex items-center gap-2 text-sm font-semibold text-slate-100/80 bg-white/10 rounded-full px-4 py-1.5 ring-1 ring-white/30">
+            <span class="w-2 h-2 rounded-full bg-kpop-sky animate-pulse"></span>
+            글로벌 음악 트렌드를 이끄는 한국 대중음악
+          </p>
+          <h1 class="mt-6 text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-lg">
+            K-POP Spotlight
+          </h1>
+          <p class="mt-4 text-base md:text-lg text-slate-100/80 leading-relaxed">
+            풍부한 스토리텔링과 정교한 퍼포먼스, 그리고 전 세계 팬들과의 강력한 연결 고리를 만드는 K-POP의 세계를 만나보세요.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3 text-sm">
+            <span class="px-4 py-2 rounded-2xl border border-white/30 bg-white/10 text-slate-100/90">Glassmorphism</span>
+            <span class="px-4 py-2 rounded-2xl border border-white/30 bg-white/10 text-slate-100/90">Fan Connection</span>
+            <span class="px-4 py-2 rounded-2xl border border-white/30 bg-white/10 text-slate-100/90">Storytelling</span>
+          </div>
+        </div>
+        <figure class="relative mx-auto">
+          <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-kpop-sky/40 to-kpop-blue/30 blur-2xl"></div>
+          <div class="relative rounded-[2rem] border border-white/40 bg-white/20 backdrop-blur-2xl p-6 shadow-[0_20px_60px_rgba(15,23,42,0.55)]">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+              alt="대한민국 국기"
+              class="w-full h-auto rounded-2xl border border-white/50 shadow-lg"
+              loading="lazy"
+            >
+            <figcaption class="mt-4 text-center text-sm text-slate-100/80">
+              대한민국 국기 · 위키미디어 공용
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+    </header>
+
+    <main class="relative max-w-6xl mx-auto px-6 pb-20 space-y-12 text-slate-100/90">
+      <section class="fade-in fade-delay-2 bg-white/10 backdrop-blur-2xl rounded-[2rem] p-10 shadow-[0_25px_60px_rgba(15,23,42,0.55)] ring-1 ring-white/15">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-2xl bg-white/20 text-white font-semibold flex items-center justify-center border border-white/40">01</span>
+            <h2 class="text-3xl font-semibold text-white">K-POP 연대기</h2>
+          </div>
+          <span class="text-sm uppercase tracking-[0.4em] text-white/70">1990s - 2020s</span>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/70">1세대 (1990s)</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">아이돌 시초</h3>
+            <p class="mt-2 text-sm leading-relaxed">
+              H.O.T., S.E.S., 젝스키스 등으로 아이돌 시스템이 정립되고 대중가요에 댄스와 힙합 요소가 본격 도입되었습니다.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/70">2세대 (2000s)</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">아시아 확장</h3>
+            <p class="mt-2 text-sm leading-relaxed">
+              BoA, 동방신기, 소녀시대, BIGBANG 등이 일본과 중국 시장을 공략하며 K-POP의 해외 팬덤을 본격화했습니다.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/70">3세대 (2010s)</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">글로벌 돌풍</h3>
+            <p class="mt-2 text-sm leading-relaxed">
+              BTS, EXO, TWICE가 미국과 유럽 차트에서 히트하며 SNS 기반 팬미팅·콘텐츠 전략이 정착했습니다.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-5">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/70">4세대 (2020s)</p>
+            <h3 class="mt-3 text-xl font-semibold text-white">뉴미디어 시대</h3>
+            <p class="mt-2 text-sm leading-relaxed">
+              aespa, NewJeans, Stray Kids 등이 메타버스·AI 콘셉트, 짧은 형식 콘텐츠로 팬들과 상호작용하며 장르 스펙트럼을 확장 중입니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="fade-in fade-delay-3 bg-gradient-to-br from-white/15 via-white/5 to-white/10 backdrop-blur-2xl rounded-[2rem] p-10 shadow-[0_25px_60px_rgba(15,23,42,0.4)] ring-1 ring-white/15">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-white/20 text-white font-semibold flex items-center justify-center border border-white/40">02</span>
+          <h2 class="text-3xl font-semibold text-white">음악적 특징</h2>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-6 space-y-4">
+            <div>
+              <p class="text-sm uppercase tracking-[0.4em] text-white/70">사운드 & 프로덕션</p>
+              <h3 class="text-2xl font-semibold text-white mt-2">장르 혼합과 실험성</h3>
+            </div>
+            <p class="text-sm leading-relaxed">
+              발라드, 힙합, EDM, 재즈, 일렉트로팝 등 다양한 장르를 결합해 곡당 여러 스타일을 전개하는 것이 특징입니다.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>레이어드 보컬과 화려한 코러스</li>
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>후렴의 강렬한 훅과 다이내믹한 브리지 구성</li>
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>프로듀서·송라이터 네트워크를 통한 글로벌 협업</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-6 space-y-4">
+            <div>
+              <p class="text-sm uppercase tracking-[0.4em] text-white/70">비주얼 & 퍼포먼스</p>
+              <h3 class="text-2xl font-semibold text-white mt-2">군무, 뮤직비디오, 패션</h3>
+            </div>
+            <p class="text-sm leading-relaxed">
+              정교한 군무, 세계관 기반의 뮤직비디오, 콘셉트별 패션을 통해 시각적 완성도를 높여 글로벌 팬덤의 몰입을 이끕니다.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>라이브와 방송 무대를 위한 멀티 카메라 연출</li>
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>팬 참여형 챌린지, 커버댄스 문화 확산</li>
+              <li class="flex items-start gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>디지털 앨범·포토카드 등 컬렉터블 굿즈</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="fade-in fade-delay-4 bg-white/10 backdrop-blur-2xl rounded-[2rem] p-10 shadow-[0_25px_60px_rgba(15,23,42,0.4)] ring-1 ring-white/15">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-white/20 text-white font-semibold flex items-center justify-center border border-white/40">03</span>
+          <h2 class="text-3xl font-semibold text-white">대표 아티스트</h2>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-3xl border border-white/20 bg-gradient-to-b from-white/20 to-transparent p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">BTS</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-white/70">2013 -</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed">
+              자아·청춘 서사를 담은 음악과 웅장한 퍼포먼스로 빌보드 차트 1위를 기록하며 세계적 인지도를 확보했습니다.
+            </p>
+            <p class="mt-2 text-xs text-white/70">대표곡: Dynamite, Butter, Yet To Come</p>
+          </article>
+          <article class="rounded-3xl border border-white/20 bg-gradient-to-b from-white/20 to-transparent p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">BLACKPINK</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-white/70">2016 -</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed">
+              강렬한 걸크러시 콘셉트와 세련된 비주얼, 트랩·하우스 사운드를 결합해 유튜브 뮤직비디오 기록을 다수 보유하고 있습니다.
+            </p>
+            <p class="mt-2 text-xs text-white/70">대표곡: Kill This Love, How You Like That</p>
+          </article>
+          <article class="rounded-3xl border border-white/20 bg-gradient-to-b from-white/20 to-transparent p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">NewJeans</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-white/70">2022 -</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed">
+              미니멀 R&amp;B 사운드와 Y2K 미학으로 글로벌 Z세대를 공략하며 짧은 형식 콘텐츠에서 높은 바이럴을 기록 중입니다.
+            </p>
+            <p class="mt-2 text-xs text-white/70">대표곡: Attention, Ditto</p>
+          </article>
+          <article class="rounded-3xl border border-white/20 bg-gradient-to-b from-white/20 to-transparent p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">Stray Kids</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-white/70">2018 -</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed">
+              셀프 프로듀싱과 강렬한 일렉트로닉 사운드, 퍼포먼스로 로열티 높은 팬덤을 구축했습니다.
+            </p>
+            <p class="mt-2 text-xs text-white/70">대표곡: Thunderous, Maniac</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="fade-in fade-delay-5 bg-gradient-to-br from-kpop-indigo/40 to-kpop-blue/40 backdrop-blur-2xl rounded-[2rem] p-10 shadow-[0_25px_60px_rgba(15,23,42,0.5)] ring-1 ring-white/15">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-white/30 text-white font-semibold flex items-center justify-center border border-white/50">04</span>
+          <h2 class="text-3xl font-semibold text-white">팬덤 & 산업</h2>
+        </div>
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-2xl border border-white/30 bg-white/10 p-6">
+            <h3 class="text-xl font-semibold text-white">팬덤 문화</h3>
+            <p class="mt-3 text-sm leading-relaxed">
+              팬클럽, 응원봉, 팬 아트, 스트리밍 파티 등 참여형 활동이 활발하며 투표·기부 캠페인으로 사회적 영향력을 확대합니다.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/30 bg-white/10 p-6">
+            <h3 class="text-xl font-semibold text-white">디지털 플랫폼</h3>
+            <p class="mt-3 text-sm leading-relaxed">
+              위버스, 버블, 유튜브, 틱톡을 통해 실시간 소통과 팬 참여형 콘텐츠를 제작하며 글로벌 확산 속도를 높입니다.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-white/30 bg-white/10 p-6">
+            <h3 class="text-xl font-semibold text-white">경제 효과</h3>
+            <p class="mt-3 text-sm leading-relaxed">
+              음반·MD·투어·IP 라이선싱까지 이어지는 비즈니스 모델로 한국 문화산업 수출의 핵심 축으로 자리 잡았습니다.
+            </p>
+          </article>
+        </div>
+        <div class="mt-10 rounded-3xl border border-white/30 bg-white/10 p-6">
+          <p class="text-sm uppercase tracking-[0.4em] text-white/70">글로벌 파급력</p>
+          <p class="mt-3 text-lg leading-relaxed text-white/90">
+            2020년대 이후 K-POP은 다국적 멤버 구성과 다언어 릴리스 전략으로 현지화 장벽을 낮추고, 국제 음악 시상식과 북미·유럽 투어에서 주류 팝과 경쟁하고 있습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="fade-in fade-delay-6 bg-white/10 backdrop-blur-2xl rounded-[2rem] p-10 shadow-[0_25px_60px_rgba(15,23,42,0.45)] ring-1 ring-white/15">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-white/20 text-white font-semibold flex items-center justify-center border border-white/40">05</span>
+          <h2 class="text-3xl font-semibold text-white">도전과 과제</h2>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-6">
+            <h3 class="text-xl font-semibold text-white">산업 구조적 이슈</h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed">
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>경쟁 심화와 연습생 시스템으로 인한 건강·노동 문제</li>
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>히트곡 수명의 단축과 과도한 콘텐츠 제작 압박</li>
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>플랫폼 집중으로 인한 수익 배분 불균형</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/20 bg-white/5 p-6">
+            <h3 class="text-xl font-semibold text-white">문화적 논의</h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed">
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>표절 의혹, 외국어 남용 등 창작 윤리에 대한 토론</li>
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>콘셉트 선정성과 사회적 메시지 균형에 대한 요구</li>
+              <li class="flex gap-2"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-kpop-sky"></span>팬덤 내부의 경쟁 구도와 지속 가능한 소비에 대한 고민</li>
+            </ul>
+          </article>
+        </div>
+        <p class="mt-6 text-sm text-white/80">
+          지속 가능한 성장을 위해 창작자 권익 보호, 아티스트 복지, 건강한 팬덤 문화를 병행하는 논의가 이어지고 있습니다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="relative text-center text-slate-200/70 pb-12 text-sm">
+      © 2025 K-POP Guide · 모든 음악과 이미지는 각 아티스트와 소속사에 권리가 있습니다.
+    </footer>
+  </div>
+</body>
+</html>
+
